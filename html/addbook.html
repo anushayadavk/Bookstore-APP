@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
+    integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg=="
+    crossorigin="anonymous"> </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/addbook.css">
+    <script src="../js/addbook.js"></script>
+    <script type="text/javascript" 
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+</head>
+<body>
+      <div class="h1">
+        <div class="h2">
+            <div class="h3"></div>
+            <div class="h4">Bookstore</div>
+            <div class="part2">
+             <div class="part22"><i class="material-icons" id="m2">search</i></div>
+             <div class="part23"><input class="searchBar" type="text" name="search" placeholder="Search"></div>
+           </div>
+ 
+           <div class="user">
+             <div class="userIcon">
+                 <i class="material-icons" id="usrIcon">perm_identity</i>
+             </div>
+             <div class="userName">Anusha</div>
+         </div>
+           <div class="h6">
+               <!-- <div class="h7"></div> -->
+               <div class="cartIcon">
+                 <i class="material-icons" id="usrIcon">add_shopping_cart</i>
+ 
+             </div>
+               <div class="h8">cart</div>
+           </div>
+        </div>
+ 
+        <div class="hh7">
+         <button class ="profile">profile</button>
+         <button class ="myorders">My orders</button>
+         <button class="wishlist">Wishlist</button>
+         <button class="logout">LogOut</button>
+       </div>
+       
+ 
+ 
+        <div class="p1">Home/Book(01)</div>
+ 
+        <div class="x1">
+          <div class="qq1">
+        <div class="q2" id="q22">
+            <div class="im">
+                <img src="../image/Image 11@2x.png" width="100%" height="100%">
+                <!-- <div class="im1"></div> -->
+            </div>
+            <!-- <div class="ab21">
+                   <button class="b1" id="b11">ADD TO BAG</button>
+                   <br><br>
+                   <div class="productCounter" id="productCounter">
+                    <button class="counter-minus">-</button>
+                    <div class="counter-display">1</div>
+
+                    <button class="counter-plus">+</button>
+                </div>
+                   <button class="b2" id="b22">WISHLIST</button>
+            </div> -->
+            
+        </div>
+        <div class="q0">
+          <div class="ab21">
+            <button class="b1" id="b11">ADD TO BAG</button>
+            <!-- <br><br> -->
+            <div class="c1">
+              <button class="c2">-</button>
+              <div class="c3">1</div>
+              <button class="c4">+</button>
+          </div>
+            <button class="b2" id="b22">WISHLIST</button>
+            <button class ="b33" id="b33"><i class="material-icons">favorite_border</i></button>
+     </div>
+        </div>
+      </div>
+        <div class="q3" id="q33">
+          <!-- <div class="x3">
+          <div class="d1" id=${book._id}>${book.bookName}</div>
+          <div class="d2" id=${book._id}>${book.author}</div>
+          <div class="ab22" >
+             <div class="point" >4.5*</div>
+             <div class="r1" >(20)</div>
+          </div>
+          <div class="ab23" >
+              <div class="price1" id=${book._id} >Rs. ${book.price}</div>
+               <div class="price2" >Rs. 2000</div>
+          </div>
+        </div>
+        <div class="x4">
+          <div class="d4" >Book details</div>
+          <div class="d5" id=${book._id}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint neque reprehenderit inventore, ab libero rep
+          cupiditate voluptatem ex eum quos incidunt assumenda dolorum maxime quas, quam ea laudantium ad? Quisquam!
+          </div>
+        </div> -->
+        </div>
+        <div class="m1">
+          <div class="m2">Customer Feedback</div>
+          <div class="m3">
+              <div class="m4">Overall rating</div>
+              <div class="star">
+                  <span class="material-icons">star_outline</span>
+                  <span class="material-icons">star_outline</span>
+                  <span class="material-icons">star_outline</span>
+                  <span class="material-icons">star_outline</span>
+                  <span class="material-icons">star_outline</span>
+              </div>
+              <input type="text" class="m5" placeholder="Write a review">
+              <button class="m6">SUBMIT</button>
+          </div>
+           <div class="m7">
+          <div class="m8">
+              <div class="m9">AC</div>
+              <div class="m10">Aniket Chile</div>
+          </div>
+          <div class="star1">
+            <span class="material-icons">star_outline</span>
+            <span class="material-icons">star_outline</span>
+            <span class="material-icons">star_outline</span>
+            <span class="material-icons">star_outline</span>
+            <span class="material-icons">star_outline</span>
+          </div>
+          <div class="desc">Good product. Even though the translation could have been better, Chanakya's neeti are thought provoking. Chanakya has written on many different topics and his writings are succinct.
+          </div>
+        </div>
+           <div class="m7">
+          <div class="m8">
+              <div class="m9">SB</div>
+              <div class="m10">Shweta Bodkar</div>
+          </div>
+          <div class="strar1">
+            <span class="material-icons">star_outline</span>
+            <span class="material-icons">star_outline</span>
+            <span class="material-icons">star_outline</span>
+            <span class="material-icons">star_outline</span>
+            <span class="material-icons">star_outline</span>
+          </div>
+          <div class="desc">Good product. Even though the translation could have been better, Chanakya's neeti are thought provoking. Chanakya has written on many different topics and his writings are succinct.
+          </div>
+           </div>
+      </div>
+      </div>
+     </div>
+
+</body>
+</html>
