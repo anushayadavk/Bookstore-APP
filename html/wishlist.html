@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
+    integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg=="
+    crossorigin="anonymous"> </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/wishlist.css">
+    <script src="../js/wishlist.js"></script>
+</head>
+<body>
+    <div class="h1">
+        <div class="h2">
+            <div class="h3"></div>
+            <div class="h4">Bookstore</div>
+            <div class="part2">
+             <div class="part22"><i class="material-icons" id="m2">search</i></div>
+             <div class="part23"><input class="searchBar" type="text" name="search" placeholder="Search"></div>
+           </div>
+ 
+           <div class="user">
+             <div class="userIcon">
+                 <i class="material-icons" id="usrIcon">perm_identity</i>
+             </div>
+             <div class="userName">Anusha</div>
+         </div>
+           <div class="h6">
+               <!-- <div class="h7"></div> -->
+               <div class="cartIcon">
+                 <i class="material-icons" id="usrIcon">add_shopping_cart</i>
+ 
+             </div>
+               <div class="h8">cart</div>
+           </div>
+        </div>
+ 
+        <div class="hh7">
+         <button class ="profile">profile</button>
+         <button class ="myorders">Book List</button>
+         <button class="wishlist">Wishlist</button>
+         <button class="logout">LogOut</button>
+       </div>
+        <div class="p1">Home/Wishlist</div>
+        <div class="wish01"><div class="wish02">My Wishlist</div></div>
+
+        <div class="wishlistContent">
+            <!-- <div class="wishcont" id="${res.product_id._id}">
+                <div class="imagecont" id="${res.product_id._id}"><img src="../image1/Image 11.png" width="100%" height="100%"></div>
+                <div class="bookDetails" id="${res.product_id._id}">
+                    <div class="name01" id="${res.product_id._id}">${res.product_id.bookName}</div>
+                    <div class="author01" id="${res.product_id._id}">${res.product_id.author}</div>
+                    <div class="bookPrice" id="${res.product_id._id}">
+                        <div class="bookPrice01" id="${res.product_id._id}">Rs. ${res.product_id.price}</div>
+                        <div class="bookPrice02" id="${res.product_id._id}"> ${res.product_id.price}</div>
+                    </div> 
+                    <div class= "delete01" id="${res.product_id._id}"><i class="material-icons" id="${res.product_id._id}">delete</i></div>  
+                </div>
+            </div> -->
+        </div>
+    </div>
+</body>
+</html>
